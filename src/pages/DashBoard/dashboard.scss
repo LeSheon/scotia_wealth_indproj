@@ -1,8 +1,14 @@
 @use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography" as *;
 
 .dashboard {
     &__scotia-icon {
         width: 50px;
+    }
+
+    h1 {
+        font-family: "Scotia-Bold";
+        font-weight: 600;
     }
 }
 
