@@ -3,6 +3,10 @@
 
 .investment {
 
+    background-color: $white;
+
+    padding-bottom: 120px;
+
     &__back-button a{
         text-decoration: none;   // removes underline
         color: inherit;          // inherits color from parent, so no blue color
@@ -97,12 +101,13 @@
         color: $white;
         margin-top: 1.43rem;
         border: none;
-
+        font-weight: 700;
     }
     &__cancel{
         background-color: $white;
         color: $gray;
         border: 2px solid #F2F1F1;
         margin-top: 8px;
+        font-weight: 700;
     }
 }

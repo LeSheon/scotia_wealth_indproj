@@ -96,7 +96,7 @@ export default function MainPortfolio() {
 
                 <div className="main-portfolio__stock-chart">
                     <img className="main-portfolio__overview-diagram" src={overView} alt=""/>
-                    <button className="main-portfolio__overview-button">Add An Investment</button>
+                    <button onClick={() => navigate('/add')} className="main-portfolio__overview-button">Add An Investment</button>
                 </div>
             </div>
         </section>

@@ -7,7 +7,7 @@ import DownButton from "../../assets/icons/mdi_chevron-down.svg";
 const AddInvestment = () => {
 
     return (
-        <>
+        <section className="investment">
         <div className="investment__upper-buttons">
             <div className="investment__back-button">
                 <Link to={`/`}>
@@ -36,7 +36,7 @@ const AddInvestment = () => {
                 <button className="button button__cancel" type="reset">Cancel</button>
             </form>
         </div>
-        </>
+        </section>
     )
 
 }

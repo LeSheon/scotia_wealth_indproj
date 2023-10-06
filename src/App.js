@@ -6,7 +6,6 @@ import Header from "./components/Header/Header";
 import MainPortfolio from './pages/MainPortfolio/MainPortfolio';
 import AddInvestment from './pages/AddInvestment/AddInvestment';
 import Assessment from "./pages/Assessment/Assessment";
-import MainPortfolio from "./pages/MainPortfolio/MainPortfolio";
 
 function App() {
   return (
