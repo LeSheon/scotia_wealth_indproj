@@ -5,7 +5,7 @@ import circleDiagram from "../../assets/images/Circle_Diagram.png";
 import stockGraph from "../../assets/images/stock-graph.png";
 import stockState from "../../assets/images/stock-list-state.png";
 import starbucksIcon from "../../assets/icons/simple-icons_starbucks.svg";
-import appleIcon from "../../assets/images/apple-icon.png";
+import appleIcon from "../../assets/icons/apple-icon.svg";
 import overView from "../../assets/images/overview-diagram.png";
 
 export default function MainPortfolio() {
