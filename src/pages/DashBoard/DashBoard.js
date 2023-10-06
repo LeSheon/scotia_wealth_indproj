@@ -3,6 +3,7 @@ import "./dashboard.scss";
 import moreIcon from "../../assets/icons/3dot_button_with_border.svg";
 import bullseyeIcon from "../../assets/icons/Bullseye.svg";
 import infoIcon from "../../assets/icons/i.svg";
+import MainPortfolio from "../MainPortfolio/MainPortfolio";
 export default function DashBoard() {
   return (
     <>
@@ -30,7 +31,7 @@ export default function DashBoard() {
                   </p>
                 </div>
               </div>
-              <Link className="dashboard__card-button">
+              <Link className="dashboard__card-button" to="main-portfolio">
                 View Your Portfolio
               </Link>
             </div>
