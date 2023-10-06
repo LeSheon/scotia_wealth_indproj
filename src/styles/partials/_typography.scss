@@ -1,0 +1,19 @@
+
+
+// Define Scotia Fonts
+
+@font-face {
+    font-family: "Scotia-Regular", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    src: url ("../../assets/fonts/Scotia-Regular.woff") format("woff"),
+         url ("../../assets/fonts/alternative_files/Scotia-Regular.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "Scotia-Bold", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    src: url ("../../assets/fonts/Scotia-Bold.woff") format("woff"),
+         url ("../../assets/fonts/alternative_files/Scotia-Bold.ttf") format("truetype");
+  }

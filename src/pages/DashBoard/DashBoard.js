@@ -6,7 +6,7 @@ export default function DashBoard() {
     return (
         <main className="dashboard">
             <h1 className="dashboard__title">
-                Scotia Smart Investor
+                HENRY CHANDLER
             </h1>
             <div>
                 <img className="dashboard__scotia-icon" src={scotiaIcon} alt=""/>
