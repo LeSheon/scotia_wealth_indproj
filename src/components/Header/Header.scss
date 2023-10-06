@@ -1,0 +1,59 @@
+@use "../../styles/partials/resets" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/variables" as *;
+
+.header {
+  padding: 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
+  background-color: white;
+  &__container {
+    &-top {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      align-items: center;
+    }
+    &-bottom {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__title {
+    &-main {
+      color: #000;
+      font-family: "Scotia-Bold";
+      font-size: 20px;
+      line-height: normal;
+      letter-spacing: -0.03rem;
+      margin-left: 2.2rem;
+      margin-right: 0.8rem;
+    }
+    &-second {
+      color: #000;
+      font-family: "Scotia-Bold";
+      font-size: 13px;
+      font-style: normal;
+      line-height: normal;
+      margin: 0;
+    }
+    &-third {
+      color: #754eae;
+      font-family: Frutiger Bold;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: -0.036rem;
+      margin: 0;
+    }
+  }
+  &__icon {
+    &-close {
+      height: 16px;
+      width: 16px;
+    }
+  }
+}
