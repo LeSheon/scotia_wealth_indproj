@@ -7,13 +7,17 @@ import stockState from "../../assets/images/stock-list-state.png";
 import starbucksIcon from "../../assets/icons/simple-icons_starbucks.svg";
 import appleIcon from "../../assets/icons/apple-icon.svg";
 import overView from "../../assets/images/overview-diagram.png";
+import { useNavigate } from "react-router-dom";
 
 export default function MainPortfolio() {
+
+    const navigate = useNavigate();
+
     return (
         <section className="main-portfolio">
             <h1 className="main-portfolio__advisor-name">HENRY CHANDLER</h1>
             <div className="main-portfolio__advisor-button-container">
-                <button className="main-portfolio__advisor-button">
+                <button onClick={() => navigate('/assessment')} className="main-portfolio__advisor-button">
                     <img className="main-portfolio__advisor-button-icon" src={starIcon} alt=""/>
                     Start An Assessment
                 </button>

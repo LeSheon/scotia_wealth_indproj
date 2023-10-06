@@ -1,0 +1,109 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography" as *;
+
+.assessment {
+    width: 100%;
+    display: flex;
+    flex-flow: wrap column;
+    padding: $mobile-padding;
+    font-family: "Scotia-Regular";
+    background-color: $lighterGray;
+    justify-content: center;
+    padding-bottom: 36px;
+
+    &__title {
+        font-size: 31px;
+        font-weight: 700;
+        color: $darkerGray;
+    }
+
+    &__image-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__info-container {
+        width: 100%;
+        display: flex;
+        flex-flow: wrap column;
+        justify-content: center;
+    }
+
+    &__text {
+        font-size: 21px;
+        font-weight: 700;
+        font-family: "Scotia-Bold";
+
+        &--red {
+            color: $scotiabankRed;
+        }
+    }
+
+    &__list {
+        width: 100%;
+        margin-left: 8px;
+        padding: $mobile-padding 21px;
+        display: flex;
+        flex-flow: wrap column;
+        justify-content: center;
+
+        &-item {
+            width: 100%;
+            padding: 4px;
+        }
+
+        &-text {
+            font-size: 16px;
+            font-weight: 400;
+
+            &--bold {
+                font-weight: 600;
+            }
+
+            &--brown {
+                font-weight: 600;
+                color: #7D1002;
+            }
+        }
+
+        &-stock-info {
+            width: 100%;
+        }
+
+        &-percent-bar {
+            width: 100%;
+        }
+    }
+
+    
+    &__footer {
+
+        display: flex;
+        flex-flow: wrap column;
+        justify-content: center;
+        align-items: center;
+
+        &-title {
+            font-size: 24px;
+            color: $scotiabankRed;
+            margin-bottom: 12px;
+            font-family: "Scotia-Bold";
+        }
+
+        &-button {
+            width: 80%;
+            background-color: $scotiabankRed;
+            border-radius: 10px;
+            color: $white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            margin-bottom: 12px;
+            font-weight: 700;
+            font-family: "Scotia-Bold";
+        }
+    }
+
+}
