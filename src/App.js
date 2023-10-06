@@ -1,5 +1,6 @@
 import "./App.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+// @ts-ignore
 import DashBoard from "./pages/DashBoard/DashBoard";
 import Header from "./components/Header/Header";
 import MainPortfolio from './pages/MainPortfolio/MainPortfolio';
