@@ -1,9 +1,12 @@
 import "./mainportfolio.scss";
 import starIcon from "../../assets/icons/carbon_star-review.svg";
-import threeDot from "../../assets/icons/3dot_button.svg";
+import threeDot from "../../assets/icons/dot-button-2.svg";
 import circleDiagram from "../../assets/images/Circle_Diagram.png";
 import stockGraph from "../../assets/images/stock-graph.png";
 import stockState from "../../assets/images/stock-list-state.png";
+import starbucksIcon from "../../assets/icons/simple-icons_starbucks.svg";
+import appleIcon from "../../assets/images/apple-icon.png";
+import overView from "../../assets/images/overview-diagram.png";
 
 export default function MainPortfolio() {
     return (
@@ -34,11 +37,47 @@ export default function MainPortfolio() {
                 <div className="main-portfolio__stock-chart">
                     <ul className="main-portfolio__stock-list">
                         <li className="main-portfolio__stock-list-item">
-                            <img className="main-portfolio__stock-list-item-icon" src="" alt=""/>
+                            <img className="main-portfolio__stock-list-item-icon" src={starbucksIcon} alt=""/>
                             <div className="main-portfolio__list-item-container">
                                 <div className="main-portfolio__list-text-container">
-                                    <h6 className="main-portfolio__list-title">SBUX</h6>
+                                    <h4 className="main-portfolio__list-title">SBUX</h4>
                                     <span className="main-portfolio__list-text">O5 units</span>
+                                </div>
+                                <div className="main-portfolio__list-text-container">
+                                    <img className="main-portfolio__stock-state" src={stockState} alt=""/>
+                                </div>
+                            </div>
+                        </li>
+                        <li className="main-portfolio__stock-list-item">
+                            <img className="main-portfolio__stock-list-item-icon" src={appleIcon} alt=""/>
+                            <div className="main-portfolio__list-item-container">
+                                <div className="main-portfolio__list-text-container">
+                                    <h4 className="main-portfolio__list-title">AAPL</h4>
+                                    <span className="main-portfolio__list-text">O5 units</span>
+                                </div>
+                                <div className="main-portfolio__list-text-container">
+                                    <img className="main-portfolio__stock-state" src={stockState} alt=""/>
+                                </div>
+                            </div>
+                        </li>
+                        <li className="main-portfolio__stock-list-item">
+                            <div className="main-portfolio__stock-list-item-icon" src="" alt=""/>
+                            <div className="main-portfolio__list-item-container">
+                                <div className="main-portfolio__list-text-container">
+                                    <h4 className="main-portfolio__list-title">BITCOIN</h4>
+                                    <span className="main-portfolio__list-text">O.34534 BTC</span>
+                                </div>
+                                <div className="main-portfolio__list-text-container">
+                                    <img className="main-portfolio__stock-state" src={stockState} alt=""/>
+                                </div>
+                            </div>
+                        </li>
+                        <li className="main-portfolio__stock-list-item">
+                            <div className="main-portfolio__stock-list-item-icon" src="" alt=""/>
+                            <div className="main-portfolio__list-item-container">
+                                <div className="main-portfolio__list-text-container">
+                                    <h4 className="main-portfolio__list-title">QQQ</h4>
+                                    <span className="main-portfolio__list-text">O7 units</span>
                                 </div>
                                 <div className="main-portfolio__list-text-container">
                                     <img className="main-portfolio__stock-state" src={stockState} alt=""/>
@@ -49,6 +88,11 @@ export default function MainPortfolio() {
                 </div>
                 <div className="main-portfolio__stock-chart">
                     <img className="main-portfolio__stock-graph" src={stockGraph} alt=""/>
+                </div>
+
+                <div className="main-portfolio__stock-chart">
+                    <img className="main-portfolio__overview-diagram" src={overView} alt=""/>
+                    <button className="main-portfolio__overview-button">Add An Investment</button>
                 </div>
             </div>
         </section>

@@ -70,6 +70,7 @@
         align-items: center;
         justify-content: space-around;
         padding-top: $mobile-padding;
+        margin-bottom: 12px;
     }
 
     &__invest-title {
@@ -87,14 +88,79 @@
 
     &__stock-chart {
         width: 100%;
-        padding: 0 15px;
         background-color: $white;
         border: 2px solid #D9D9D9;
         min-height: 50px;
         margin: 8px 0;
+        border-radius: 10px;
     }
 
     &__stock-graph {
         width: 100%;
+        border-radius: 10px;
     }
+
+    &__stock-list-item {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4px 0;
+        border-top: 2px solid $scotiabankRed;
+
+        &:first-child {
+            border: none;
+        }
+    }
+
+    &__stock-list-item-icon {
+        height: 35px;
+        width: 35px;
+        margin-right: 10px;
+    }
+
+
+    &__stock-list-item-icon {
+        width: 15%;
+    }
+
+    &__list-item-container {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__list-title {
+        font-size: 15px;
+        font-weight: 700;
+    }
+    
+    &__list-text {
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    &__overview-diagram {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    &__overview-button {
+        width: 85%;
+        border: none;
+        background-color: $scotiabankRed;
+        border-radius: 10px;
+        padding: 12px 24px;
+        margin: 24px;
+        font-family: "Scotia-Bold";
+        font-weight: 600;
+        color: $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+    }
+
 }
