@@ -3,16 +3,44 @@
 
 .investment {
 
+    &__back-button a{
+        text-decoration: none;   // removes underline
+        color: inherit;          // inherits color from parent, so no blue color
+        display: flex;           // to align the icon and text properly
+        align-items: center
+    }
+
+    &__back-button a:hover {
+        opacity: 0.8;
+    }
+    &__back-button a:active {
+        opacity: 0.6; 
+    }
+
     &__upper-buttons{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        margin-top: 23px;
+        margin-bottom: 38px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    &__upper-buttons span{
+        font-size: 13px;
+        font-family: "Scotia-Regular", sans-serif
     }
 
     &__back-button{
         display: flex;
         align-items: center;
+    }
+
+    &__form-header{
+        font-family: "Scotia-Regular", sans-serif;
+        font-size: 20px;
+        margin: 26px 85px;
     }
 
     &__form-container{
@@ -21,14 +49,14 @@
         justify-content: center;
         align-items: center;
         border: 2px solid #F2F1F1;
-        width: 22.375;
+        width: 92%;
+        margin: auto;
     }
     &__form{
         display: flex;
         flex-direction: column;
         padding-bottom: 1.56rem;
-
-        
+        width: 295px;
 
         &--top{
             display: flex;
@@ -36,10 +64,12 @@
             border-top: 2px solid #F2F1F1;
             border-bottom: 2px solid #F2F1F1;
             padding: 2rem 0px;
+            padding-bottom: .5rem;
         }
     }
 
     &__form-label {
+        font-family: "Scotia-Regular", sans-serif;
         font-weight: bold;
     }
     &__form-input{
@@ -58,12 +88,15 @@
 .button{
     border-radius: 10px;
     padding: 12px 5.25rem;
+    width: 275px;
+    align-self: center;
 
 
     &__save{
         background-color: $scotiabankRed;
         color: $white;
         margin-top: 1.43rem;
+        border: none;
 
     }
     &__cancel{

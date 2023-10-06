@@ -1,5 +1,5 @@
 import "./addinvestment.scss";
-//import Header
+import { Link } from "react-router-dom"
 import BackButton from "../../assets/icons/mdi_chevron-left.svg";
 import SettingsButton from "../../assets/icons/ic_sharp-settings.svg";
 import DownButton from "../../assets/icons/mdi_chevron-down.svg";
@@ -10,8 +10,10 @@ const AddInvestment = () => {
         <>
         <div className="investment__upper-buttons">
             <div className="investment__back-button">
-                <img src={BackButton} alt="back button"/>
-                <span>Back to Dashboard</span>
+                <Link to={`/`}>
+                    <img src={BackButton} alt="back button"/>
+                    <span>Back to Dashboard</span>
+                </Link>
             </div>
             <div>
                 <img src={SettingsButton} alt="settings button"/>
@@ -20,7 +22,7 @@ const AddInvestment = () => {
         </div>
 
         <div className="investment__form-container">
-            <h1 className="investment__form-header">Investment Details</h1>
+            <h2 className="investment__form-header">Investment Details</h2>
 
             <form className="investment__form">
                 <div className="investment__form--top">

@@ -13,7 +13,7 @@ function App() {
         <Routes>
           <Route path={"/"} element={<DashBoard />} />
           <Route path={'main-portfolio'} element={<MainPortfolio />}/>
-          <Route path={`/add`} element={<AddInvestment />}/>
+          <Route path={"/add"} element={<AddInvestment />}/>
         </Routes>
       </BrowserRouter>
     </div>
